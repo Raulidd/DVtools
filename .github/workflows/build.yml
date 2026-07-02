@@ -24,11 +24,20 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install nuitka pillow
-      - name: Download and install Inno Setup (Manual)
+      - name: Extract Inno Setup silently (without running its installer)
         run: |
+          # 1. Download Inno Setup
           curl -L -o innosetup.exe https://files.jrsoftware.org/is/6/innosetup-6.2.2.exe
-          .\innosetup.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /TASKS=""
-          echo "C:\Program Files (x86)\Inno Setup 6" >> $env:GITHUB_PATH
+          # 2. Download innounp (the Inno Setup extractor)
+          curl -L -o innounp.zip https://github.com/Wilenty/innounp/releases/download/v0.50/innounp050.7z
+          # 3. Install 7-Zip to extract innounp
+          choco install 7zip -y --no-progress
+          # 4. Extract innounp using 7-Zip
+          7z x innounp.zip -oinnounp
+          # 5. Use innounp to extract the Inno Setup installer WITHOUT running it
+          innounp\innounp.exe -x -dInnoSetup innosetup.exe
+          # 6. Add the extracted ISCC.exe to the system PATH
+          echo "$pwd\InnoSetup" >> $env:GITHUB_PATH
       - name: Extract app icon
         run: python packaging/extract_icon.py
         continue-on-error: true
