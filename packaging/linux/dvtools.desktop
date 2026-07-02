@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=DVtools
+GenericName=MiniDV Video Restoration
+Comment=Digitize, restore and upscale MiniDV tape footage
+Exec=dvtools_linux
+Icon=dvtools
+Categories=AudioVideo;Video;
+Terminal=false
+StartupWMClass=dvtools
