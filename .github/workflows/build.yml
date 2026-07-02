@@ -1,5 +1,3 @@
-name: Build DVtools installers
-
 # Builds all 3 platform packages whenever you push a version tag
 # (e.g. `git tag v1.0.0 && git push --tags`), or manually from the
 # Actions tab. Each OS is compiled on its OWN native runner because
@@ -7,18 +5,16 @@ name: Build DVtools installers
 # to be built on a Windows machine, a macOS .app on a Mac, etc. GitHub
 # gives you all 3 runners for free on public repos, which is what
 # makes this workflow possible without owning 3 machines.
+name: Build DVtools installers
+
 on:
   push:
     tags: ["v*"]
   workflow_dispatch: {}
 
 jobs:
-  # ------------------------------------------------------------------
   windows:
     runs-on: windows-latest
-    defaults:
-      run:
-        working-directory: DVtools
     steps:
       - uses: actions/checkout@v4
 
