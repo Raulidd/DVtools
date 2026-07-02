@@ -33,9 +33,7 @@ jobs:
           python -m nuitka --standalone --enable-plugin=tk-inter --windows-console-mode=disable --windows-icon-from-ico=packaging/icons/icon.ico --include-data-dir=fonts=fonts --include-data-dir=plugins=plugins --output-dir=build --assume-yes-for-downloads dvtools_windows.py
       - name: Build installer (Inno Setup)
         run: '"C:\Program Files (x86)\Inno Setup 6\iscc.exe" packaging/windows/installer.iss'
-      - name: Also produce a portable .zip
-        run: Compress-Archive -Path build\dvtools_windows.dist\* -DestinationPath dist\DVtools-Windows-Portable.zip
-        shell: pwsh
+        shell: cmd
       - uses: actions/upload-artifact@v4
         with:
           name: windows-installers
