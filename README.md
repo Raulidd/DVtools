@@ -1,7 +1,6 @@
 # DVtools
 A light-weight cross-platform tool to digitize, restore, and upscale MiniDV and legacy video tapes using FFmpeg, VapourSynth, and an extensible plugin system.
 
-============================================================================
 ## Requirements
 
 ### Minimum requirements
@@ -19,7 +18,6 @@ A light-weight cross-platform tool to digitize, restore, and upscale MiniDV and 
 - **Storage**: SSD, for smoother scrubbing/preview and faster batch processing
 - **Disk space**: 10+ GB free when batch-processing multiple tapes at high resolution
 
-============================================================================
 
 ## Dependencies
 
@@ -37,7 +35,6 @@ DVtools itself is built entirely on the Python standard library + Tkinter, so th
 
 > **Note on code signing**: Prebuilt binaries in this release are not code-signed (no Apple Developer or Windows code-signing certificate). On macOS you may need to right-click → Open the first time to bypass Gatekeeper; on Windows, SmartScreen may show a warning — click "More info" → "Run anyway". This is normal for unsigned indie software and not a sign of malware.
 
-============================================================================
 ## Installation
 
 Download the build for your platform from the assets below:
@@ -46,5 +43,3 @@ Download the build for your platform from the assets below:
 - **Linux**: `DVtools-Linux-x86_64.AppImage` (single file, no installation needed)
 
 That's all! an easy installation
-
-============================================================================
