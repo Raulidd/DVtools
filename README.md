@@ -38,8 +38,8 @@ DVtools itself is built entirely on the Python standard library + Tkinter, so th
 ## Installation
 
 Download the build for your platform from the assets below:
-- **Windows**: `DVtools-Setup-Windows.exe` (installer) or the portable `.zip`
-- **macOS**: `DVtools-macOS.dmg`
-- **Linux**: `DVtools-Linux-x86_64.AppImage` (single file, no installation needed)
+- **Windows**: `DVtools-Setup-Windows.exe` (installer) or the portable `.zip` [![Windows Installer](https://img.shields.io/badge/Windows-9.5MB-brightgreen)](https://github.com/Raulidd/DVtools/releases/latest)
+- **macOS**: `DVtools-macOS.dmg` [![macOS DMG](https://img.shields.io/badge/macOS-12MB-lightgrey)](https://github.com/Raulidd/DVtools/releases/latest)
+- **Linux**: `DVtools-Linux-x86_64.AppImage` (single file, no installation needed) [![Linux AppImage](https://img.shields.io/badge/Linux-26MB-green)](https://github.com/Raulidd/DVtools/releases/latest)
 
 That's all! an easy installation
