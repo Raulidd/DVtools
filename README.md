@@ -29,7 +29,7 @@ DVtools itself is built entirely on the Python standard library + Tkinter, so th
 
  **vs-fmtconv (`fmtc`)**  Optional  Needed specifically for the chromatic aberration correction filter, on top of VapourSynth. Silently skipped if not installed. 
 
- **VLC**  Is optional,  only needed if you use the "Open with VLC" button instead of the built-in preview. 
+ **VLC + python-vlc**  Is optional,  only needed if you use the Built-in preview. 
 
  **A GPU driver supporting NVENC / AMF / QuickSync**  Optional,  Only needed for hardware-accelerated encoding; DVtools falls back to CPU/software encoding automatically if unavailable. |
 
@@ -38,8 +38,8 @@ DVtools itself is built entirely on the Python standard library + Tkinter, so th
 ## Installation
 
 Download the build for your platform from the assets below:
-- **Windows**: `DVtools-Setup-Windows.exe` (installer) or the portable `.zip` [![Windows Installer](https://img.shields.io/badge/Windows-9.5MB-brightgreen)](https://github.com/Raulidd/DVtools/releases/latest)
-- **macOS**: `DVtools-macOS.dmg` [![macOS DMG](https://img.shields.io/badge/macOS-12MB-lightgrey)](https://github.com/Raulidd/DVtools/releases/latest)
-- **Linux**: `DVtools-Linux-x86_64.AppImage` (single file, no installation needed) [![Linux AppImage](https://img.shields.io/badge/Linux-26MB-green)](https://github.com/Raulidd/DVtools/releases/latest)
+- **Windows**: `DVtools-Setup-Windows.exe` (installer) or the portable `.zip`   [![Windows Installer](https://img.shields.io/badge/Windows-9.5MB-brightgreen)](https://github.com/Raulidd/DVtools/releases/latest)
+- **macOS**: `DVtools-macOS.dmg`   [![macOS DMG](https://img.shields.io/badge/macOS-12MB-lightgrey)](https://github.com/Raulidd/DVtools/releases/latest)
+- **Linux**: `DVtools-Linux-x86_64.AppImage` (single file, no installation needed)   [![Linux AppImage](https://img.shields.io/badge/Linux-26MB-green)](https://github.com/Raulidd/DVtools/releases/latest)
 
 That's all! an easy installation
